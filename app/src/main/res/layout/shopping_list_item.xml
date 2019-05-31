@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        card_view:cardElevation="2dp"
+        card_view:contentPadding="5dp"
+        card_view:cardCornerRadius="4dp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical">
+
+   <ImageView
+           android:layout_width="300dp"
+
+           android:layout_height="300dp"
+           android:layout_toLeftOf="@+id/tvName"
+           android:id="@+id/imgImageView"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:id="@+id/tvName"
+              android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@id/tvDescription"/>
+
+    <TextView
+
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tvDescription"
+            android:textSize="16sp"
+              android:layout_alignBottom="@id/tvName"
+    />
+
+    <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/imgImageView"
+    android:textSize="24sp"
+    android:textColor="#F80202"/>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
