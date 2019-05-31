@@ -31,7 +31,9 @@ val shoppingData = """
 {"ItemName":"Black Socks","ItemDescription":"12 per pack" ,"Price":34.99,"UrlImage":"https://svgsilh.com/svg/305782.svg"}]}
 """
 
-
+data class States(
+    val Idaho : String
+)
 
 
 
